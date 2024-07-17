@@ -1,8 +1,13 @@
+嚜簑sing Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using RazorPagesBook.Data;
 // Create WebApplicationBuilder
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddDbContext<RazorPagesBookContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("RazorPagesBookContext") ?? throw new InvalidOperationException("Connection string 'RazorPagesBookContext' not found.")));
 
 var app = builder.Build();
 
@@ -15,20 +20,21 @@ if (!app.Environment.IsDevelopment())
 }
 
 // Middlewares
-// 將 HTTP 要求重新導向至 HTTPS。
+// Redirects HTTP requests to HTTPS.
 app.UseHttpsRedirection();
 
-// 允許提供靜態檔案，例如 HTML、CSS、影像和 JavaScript。
+// Enables static files, such as HTML, CSS, images, and JavaScript to be served.
 app.UseStaticFiles();
 
-// 將 Route 比對新增至 middleware pipeline。
+// Adds route matching to the middleware pipeline.
 app.UseRouting();
 
-// 設定 Razor Pages 的  endpoint routing。
+// Configures endpoint routing for Razor Pages.
 app.MapRazorPages();
 
-// 授權給使用者存取安全資源。 此應用程式不使用授權。
+// Authorizes a user to access secure resources.
+// This app doesn't use authorization, therefore this line could be removed.
 //app.UseAuthorization();
 
-// 執行應用程式。
+// Runs the app.
 app.Run();
