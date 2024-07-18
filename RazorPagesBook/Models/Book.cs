@@ -9,6 +9,7 @@ namespace RazorPagesBook.Models
         public string ProductName { get; set; }
         public int Price { get; set; }
 
+        [Display(Name = "Publication Date")]
         [DataType(DataType.Date)]
         public DateTime PublicationDate { get; set; }
 
