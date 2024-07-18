@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\Desktop\\RazorPagesBook\\RazorPagesBook\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6ACAC08D-B3B5-4F6D-AC5E-81286518E4F2}|RazorPagesBook\\RazorPagesBook.csproj|d:\\desktop\\razorpagesbook\\razorpagesbook\\razorpagesbook\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6ACAC08D-B3B5-4F6D-AC5E-81286518E4F2}|RazorPagesBook\\RazorPagesBook.csproj|solutionrelative:razorpagesbook\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6ACAC08D-B3B5-4F6D-AC5E-81286518E4F2}|RazorPagesBook\\RazorPagesBook.csproj|d:\\desktop\\razorpagesbook\\razorpagesbook\\razorpagesbook\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6ACAC08D-B3B5-4F6D-AC5E-81286518E4F2}|RazorPagesBook\\RazorPagesBook.csproj|solutionrelative:razorpagesbook\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -19,6 +23,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Desktop\\RazorPagesBook\\RazorPagesBook\\RazorPagesBook\\Program.cs",
+              "RelativeDocumentMoniker": "RazorPagesBook\\Program.cs",
+              "ToolTip": "D:\\Desktop\\RazorPagesBook\\RazorPagesBook\\RazorPagesBook\\Program.cs",
+              "RelativeToolTip": "RazorPagesBook\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-18T14:46:21.652Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Book.cs",
               "DocumentMoniker": "D:\\Desktop\\RazorPagesBook\\RazorPagesBook\\RazorPagesBook\\Models\\Book.cs",
               "RelativeDocumentMoniker": "RazorPagesBook\\Models\\Book.cs",
