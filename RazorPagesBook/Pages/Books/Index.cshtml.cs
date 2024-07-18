@@ -21,6 +21,7 @@ namespace RazorPagesBook.Pages.Books
 
         public IList<Book> Book { get;set; } = default!;
 
+        // [Http] GET Request 
         public async Task OnGetAsync()
         {
             Book = await _context.Book.ToListAsync();

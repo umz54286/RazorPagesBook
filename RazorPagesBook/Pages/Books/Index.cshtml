@@ -1,6 +1,11 @@
-﻿@page
+﻿@* '@page'must be the first Razor directive on a page. *@
+@page
+@* the type of the model which passed to the Razor Page. *@
 @model RazorPagesBook.Pages.Books.IndexModel
 
+@* The '{' and '}' characters enclose a block of C# code. *@
+@* The PageModel base class contains a 'ViewData' dictionary property that can be used to pass data to a View.*@
+@* The 'Title' property is used in the 'Pages/Shared/_Layout.cshtml' file. *@
 @{
     ViewData["Title"] = "Index";
 }
@@ -14,6 +19,7 @@
     <thead>
         <tr>
             <th>
+                @* lambda expression *@
                 @Html.DisplayNameFor(model => model.Book[0].ProductNo)
             </th>
             <th>
