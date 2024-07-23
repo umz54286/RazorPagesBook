@@ -26,10 +26,10 @@ namespace RazorPagesBook.Pages.Books
         [BindProperty(SupportsGet = true)]
         public string? SearchString { get; set; }
 
-        public SelectList? BookNames { get; set; }
+        public SelectList? Types { get; set; }
 
         [BindProperty(SupportsGet = true)]
-        public string? BookName { get; set; }
+        public string? BookType { get; set; }
 
         // [Http] GET Request 
         public async Task OnGetAsync()
@@ -48,22 +48,22 @@ namespace RazorPagesBook.Pages.Books
 
             // Use LINQ to get list of genres.
             IQueryable<string> ProductNameQuery = from m in _context.Book
-                                            orderby m.ProductName
-                                            select m.ProductName;
+                                            orderby m.Type
+                                            select m.Type;
 
             var books = from m in _context.Book
                          select m;
 
             if (!string.IsNullOrEmpty(SearchString))
             {
-                books = books.Where(s => s.ProductName.Contains(SearchString));
+                books = books.Where(s => s.Type.Contains(SearchString));
             }
 
-            if (!string.IsNullOrEmpty(BookName))
+            if (!string.IsNullOrEmpty(BookType))
             {
-                books = books.Where(x => x.ProductName == BookName);
+                books = books.Where(x => x.Type == BookType);
             }
-            BookNames = new SelectList(await ProductNameQuery.Distinct().ToListAsync());
+            Types = new SelectList(await ProductNameQuery.Distinct().ToListAsync());
             Book = await books.ToListAsync();
 
         }

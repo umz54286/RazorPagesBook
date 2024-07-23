@@ -18,10 +18,10 @@
 
 <form>
     <p>
-        <select asp-for="BookName" asp-items="Model.BookNames">
+        <select asp-for="BookType" asp-items="Model.Types">
             <option value="">All</option>
         </select>
-        ProductName <input type="text" asp-for="SearchString" />
+        BookType <input type="text" asp-for="SearchString" />
         <input type="submit" value="Filter" />
     </p>
 </form>
@@ -35,6 +35,9 @@
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Book[0].ProductName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Book[0].Type)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Book[0].Price)
@@ -54,6 +57,9 @@
             <td>
                 @Html.DisplayFor(modelItem => item.ProductName)
             </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Type)
+                </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Price)
             </td>
