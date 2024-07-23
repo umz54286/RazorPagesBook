@@ -251,3 +251,4 @@ D:\Desktop\RazorPagesBook\RazorPagesBook\RazorPagesBook\bin\Debug\net8.0\runtime
 D:\Desktop\RazorPagesBook\RazorPagesBook\RazorPagesBook\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
 D:\Desktop\RazorPagesBook\RazorPagesBook\RazorPagesBook\obj\Debug\net8.0\RazorPagesBook.csproj.AssemblyReference.cache
 D:\Desktop\RazorPagesBook\RazorPagesBook\RazorPagesBook\obj\Debug\net8.0\RazorPag.F4CB033C.Up2Date
+D:\Desktop\RazorPagesBook\RazorPagesBook\RazorPagesBook\obj\Debug\net8.0\RazorPagesBook.sourcelink.json
